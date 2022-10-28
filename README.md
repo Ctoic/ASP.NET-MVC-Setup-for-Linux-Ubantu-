@@ -8,6 +8,21 @@
 
 ## Preuisites 
 1. You should know the Basics of C# 
-2. Familiar with Visual Studio on windows and for Lilnux user should know Rider. 
+2. Familiar with Visual Studio on windows and for Lilnux user should know Rider.
+## MVC 
+a). Model : Application data and behaviour in terms of its problem domain and independent of UI.
+b). View : The HTML markup displayed to the user
+c). Controller : Responsible for all our HTTP request handling.
+d). Router: Select the right controller.
+
+
+![1200px-MVC-Process svg](https://user-images.githubusercontent.com/90936436/198706350-886f93aa-865f-4b71-b966-7d1c394338cf.png)
+
+For example if we want to create a web application named as bugdetector then we will have the following HTTP: http://bugdetector.com/blog when we send a request to this http a controller is selected to handle this request. Then It will communicate with database to collect the related information(Model) and Finally return the view to the client or browser(View).
+
+
+
+
+
 
 
