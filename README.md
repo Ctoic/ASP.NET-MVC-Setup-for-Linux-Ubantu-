@@ -23,13 +23,44 @@ For example if we want to create a web application named as bugdetector then we 
 
 # Setting up the Envirement on Ubantu(Linux)
 <div>
-  ## what is OBDC?
+  <h3>what is OBDC?</h3>
   <p> 
   Open Database Connectivity (ODBC) is an open standard Application Programming Interface (API) for accessing a database. In 1992, Microsoft partners with Simba to build the world’s first ODBC driver; SIMBA.DLL, and standards-based data access was born. By using ODBC statements in a program, you can access files in a number of different common databases. In addition to the ODBC software, a separate module or driver is needed for each database to be accessed.</p>
   </div>
+<div>
 <h1>This article provides commands for installing the ODBC driver from the bash shell. If you want to download the packages directly</h1>
+      $if ! [[ "18.04 20.04 22.04" == *"$(lsb_release -rs)"* ]];
+then
+    echo "Ubuntu $(lsb_release -rs) is not currently supported.";
+    exit;
+fi
 
+sudo su
+curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 
+curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list > /etc/apt/sources.list.d/mssql-release.list
 
+exit
+sudo apt-get update
+sudo ACCEPT_EULA=Y apt-get install -y msodbcsql18
+# optional: for bcp and sqlcmd
+sudo ACCEPT_EULA=Y apt-get install -y mssql-tools18
+echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >> ~/.bashrc
+source ~/.bashrc
+# optional: for unixODBC development headers
+sudo apt-get install -y unixodbc-dev
+
+</div>
+
+<div>
+  <h3>Download and Install AzureDataStudio</h3>
+
+  <p>Azure Data Studio is a cross-platform database tool for data professionals using on-premises and cloud data platforms on Windows, macOS, and Linux.
+
+Azure Data Studio offers a modern editor experience with IntelliSense, code snippets, source control integration, and an integrated terminal. It's engineered with the data platform user in mind, with built-in charting of query result sets and customizable dashboards.
+
+The source code for Azure Data Studio and its data providers is available on GitHub under a source code EULA that provides rights to modify and use the software, but not to redistribute it or host it in a cloud service.
+**Note**https://go.microsoft.com/fwlink/?linkid=2204570
+ </p> 
 
 
