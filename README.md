@@ -65,9 +65,12 @@ The source code for Azure Data Studio and its data providers is available on Git
 **DownloadAzureStudio**https://go.microsoft.com/fwlink/?linkid=2204570
 </p> 
 <h2>Installing On Linux</h2>
-1. write the following command on the terminal
-        $ sudo dpkg -i ./Downloads/azuredatastudio-linux-<version string>.deb 
-2. Run this and Azurestudio will open
-        $ azuredatastudio
+1. write the following command on the terminal.
+  
+              $ sudo dpkg -i ./Downloads/azuredatastudio-linux-<version string>.deb 
+
+  2. Run this and Azurestudio will open.
+  
+               $ azuredatastudio
 
 
