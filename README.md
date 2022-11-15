@@ -21,6 +21,13 @@ d). Router: Select the right controller.
 For example if we want to create a web application named as bugdetector then we will have the following HTTP: http://bugdetector.com/blog when we send a request to this http a controller is selected to handle this request. Then It will communicate with database to collect the related information(Model) and Finally return the view to the client or browser(View).
 
 
+# Setting up the Envirement on Ubantu(Linux)
+<div>
+  <p> ## what is OBDC?
+  Open Database Connectivity (ODBC) is an open standard Application Programming Interface (API) for accessing a database. In 1992, Microsoft partners with Simba to build the world’s first ODBC driver; SIMBA.DLL, and standards-based data access was born. By using ODBC statements in a program, you can access files in a number of different common databases. In addition to the ODBC software, a separate module or driver is needed for each database to be accessed.</p>
+  </div>
+
+
 
 
 
