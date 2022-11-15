@@ -93,6 +93,6 @@ The source code for Azure Data Studio and its data providers is available on Git
 
   2. Run this and Azurestudio will open.
   
-                $ azuredatastudio
+               $ azuredatastudio
 
 
