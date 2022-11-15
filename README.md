@@ -64,7 +64,7 @@ Azure Data Studio offers a modern editor experience with IntelliSense, code snip
 The source code for Azure Data Studio and its data providers is available on GitHub under a source code EULA that provides rights to modify and use the software, but not to redistribute it or host it in a cloud service.
 **DownloadAzureStudio**https://go.microsoft.com/fwlink/?linkid=2204570
 </p> 
-<h2>Installing On Linux</h>
+<h2>Installing On Linux</h2>
 1. write the following command on the terminal
         $ sudo dpkg -i ./Downloads/azuredatastudio-linux-<version string>.deb 
 2. Run this and Azurestudio will open
