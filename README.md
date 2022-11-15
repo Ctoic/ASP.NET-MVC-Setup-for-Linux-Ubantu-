@@ -23,11 +23,11 @@ For example if we want to create a web application named as bugdetector then we 
 
 # Setting up the Envirement on Ubantu(Linux)
 <div>
-  <p> ## what is OBDC?
+  ## what is OBDC?
+  <p> 
   Open Database Connectivity (ODBC) is an open standard Application Programming Interface (API) for accessing a database. In 1992, Microsoft partners with Simba to build the world’s first ODBC driver; SIMBA.DLL, and standards-based data access was born. By using ODBC statements in a program, you can access files in a number of different common databases. In addition to the ODBC software, a separate module or driver is needed for each database to be accessed.</p>
   </div>
-
-
+<h1>This article provides commands for installing the ODBC driver from the bash shell. If you want to download the packages directly</h1>
 
 
 
