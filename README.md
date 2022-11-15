@@ -30,11 +30,17 @@ For example if we want to create a web application named as bugdetector then we 
 <div>
 <h1>This article provides commands for installing the ODBC driver from the bash shell. If you want to download the packages directly</h1>
 <p>
-    $if ! [[ "18.04 20.04 22.04" == *"$(lsb_release -rs)"* ]];
-then
+  
+    if ! [[ "18.04 20.04 22.04" == *"$(lsb_release -rs)"* ]];
+
+  then
+  
     echo "Ubuntu $(lsb_release -rs) is not currently supported.";
-    exit;
-fi
+    
+  exit;
+
+  fi
+  
 </p>
 
 <p> sudo su
