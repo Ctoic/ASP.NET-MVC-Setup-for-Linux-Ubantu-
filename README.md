@@ -37,19 +37,21 @@ For example if we want to create a web application named as bugdetector then we 
   
     echo "Ubuntu $(lsb_release -rs) is not currently supported.";
     
-   exit;
+    exit;
 
-  fi
+     fi
   
 </p>
 
-<p> sudo su
+<p>
+  
+  $ sudo su
   
     curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 
     curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list > /etc/apt/sources.list.d/mssql-release.list
 
-exit
+    exit
   
     $ sudo apt-get update
   
@@ -62,7 +64,8 @@ exit
   
     echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >> ~/.bashrc
     
-  $ source ~/.bashrc
+    $ source ~/.bashrc
+  
 ### optional: for unixODBC development headers
 
   
@@ -79,8 +82,10 @@ exit
 Azure Data Studio offers a modern editor experience with IntelliSense, code snippets, source control integration, and an integrated terminal. It's engineered with the data platform user in mind, with built-in charting of query result sets and customizable dashboards.
 
 The source code for Azure Data Studio and its data providers is available on GitHub under a source code EULA that provides rights to modify and use the software, but not to redistribute it or host it in a cloud service.
+    
 **DownloadAzureStudio**https://go.microsoft.com/fwlink/?linkid=2204570
-</p> 
+
+  </p> 
 <h2>Installing On Linux</h2>
 1. write the following command on the terminal.
   
