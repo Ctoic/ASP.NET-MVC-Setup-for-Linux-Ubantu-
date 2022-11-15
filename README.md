@@ -83,7 +83,7 @@ Azure Data Studio offers a modern editor experience with IntelliSense, code snip
 
 The source code for Azure Data Studio and its data providers is available on GitHub under a source code EULA that provides rights to modify and use the software, but not to redistribute it or host it in a cloud service.
     
-**DownloadAzureStudio**https://go.microsoft.com/fwlink/?linkid=2204570
+**DownloadAzureStudio** 🔗https://go.microsoft.com/fwlink/?linkid=2204570
 
   </p> 
 <h2>Installing On Linux</h2>
