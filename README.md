@@ -29,13 +29,15 @@ For example if we want to create a web application named as bugdetector then we 
   </div>
 <div>
 <h1>This article provides commands for installing the ODBC driver from the bash shell. If you want to download the packages directly</h1>
-      $if ! [[ "18.04 20.04 22.04" == *"$(lsb_release -rs)"* ]];
+<p>
+    $if ! [[ "18.04 20.04 22.04" == *"$(lsb_release -rs)"* ]];
 then
     echo "Ubuntu $(lsb_release -rs) is not currently supported.";
     exit;
 fi
+</p>
 
-sudo su
+<p> sudo su
 curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 
 curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list > /etc/apt/sources.list.d/mssql-release.list
@@ -43,13 +45,13 @@ curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list >
 exit
 sudo apt-get update
 sudo ACCEPT_EULA=Y apt-get install -y msodbcsql18
-# optional: for bcp and sqlcmd
+### optional: for bcp and sqlcmd
 sudo ACCEPT_EULA=Y apt-get install -y mssql-tools18
 echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >> ~/.bashrc
 source ~/.bashrc
-# optional: for unixODBC development headers
+### optional: for unixODBC development headers
 sudo apt-get install -y unixodbc-dev
-
+</p>
 </div>
 
 <div>
@@ -60,7 +62,12 @@ sudo apt-get install -y unixodbc-dev
 Azure Data Studio offers a modern editor experience with IntelliSense, code snippets, source control integration, and an integrated terminal. It's engineered with the data platform user in mind, with built-in charting of query result sets and customizable dashboards.
 
 The source code for Azure Data Studio and its data providers is available on GitHub under a source code EULA that provides rights to modify and use the software, but not to redistribute it or host it in a cloud service.
-**Note**https://go.microsoft.com/fwlink/?linkid=2204570
- </p> 
+**DownloadAzureStudio**https://go.microsoft.com/fwlink/?linkid=2204570
+</p> 
+<h2>Installing On Linux</h>
+1. write the following command on the terminal
+        $ sudo dpkg -i ./Downloads/azuredatastudio-linux-<version string>.deb 
+2. Run this and Azurestudio will open
+        $ azuredatastudio
 
 
